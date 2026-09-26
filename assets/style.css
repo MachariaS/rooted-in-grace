@@ -279,7 +279,8 @@ header{
   border:1px solid rgba(107,78,54,.16);display:flex;align-items:center;justify-content:center;
   color:var(--moss);position:relative;overflow:hidden;
 }
-.portrait-frame::before{content:"";position:absolute;inset:10px;border:1px solid rgba(201,162,75,.35);border-radius:12px;pointer-events:none}
+.portrait-frame img{width:100%;height:100%;object-fit:cover;object-position:50% 28%;display:block}
+.portrait-frame::before{content:"";position:absolute;inset:10px;border:1px solid rgba(201,162,75,.35);border-radius:12px;pointer-events:none;z-index:1}
 .portrait-frame span{font-family:var(--display);font-style:italic;font-size:1rem;color:var(--moss);text-align:center;padding:0 24px}
 .mission-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:44px}
 @media (max-width:860px){.mission-grid{grid-template-columns:1fr}}
